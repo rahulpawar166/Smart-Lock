@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E7E7EC1EEFD2A4B81F3BB62 /* Pods_Smart_Lock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5966DCFBDAE294363B0939E9 /* Pods_Smart_Lock.framework */; };
+		002540D68D542DAD164769D4 /* libPods-Smart Lock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0932BD63B5272A8635B514 /* libPods-Smart Lock.a */; };
 		B70C38B3241844340059E0B3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C38B2241844340059E0B3 /* LoginVC.swift */; };
 		B70C38B52419193A0059E0B3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C38B42419193A0059E0B3 /* HomeVC.swift */; };
 		B70C38B92419275E0059E0B3 /* PhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C38B82419275D0059E0B3 /* PhoneVC.swift */; };
@@ -17,27 +17,13 @@
 		B763B2182408EEAC0004AE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B763B2172408EEAC0004AE71 /* Assets.xcassets */; };
 		B763B21B2408EEAC0004AE71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B763B2192408EEAC0004AE71 /* LaunchScreen.storyboard */; };
 		B7675F7A24196F0B00CA9B0A /* VerifyOtpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7675F7924196F0B00CA9B0A /* VerifyOtpVC.swift */; };
+		B77621EC242B9105005A642E /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77621EB242B9105005A642E /* SignUpVC.swift */; };
 		B79779EB240BC8BB004564CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B79779EA240BC8BB004564CE /* GoogleService-Info.plist */; };
 		B7F502F52417AEBF008276CB /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F502F42417AEBF008276CB /* extension.swift */; };
-		B7F502FA2417BB05008276CB /* Pods_Smart_Lock.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9B8A5F45345B5CC8CA5D2F6 /* Pods_Smart_Lock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		B7F502FB2417BB05008276CB /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B7F502FA2417BB05008276CB /* Pods_Smart_Lock.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		5966DCFBDAE294363B0939E9 /* Pods_Smart_Lock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Lock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E0932BD63B5272A8635B514 /* libPods-Smart Lock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Smart Lock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A453CF1B8BB6D1B7036D84 /* Pods-Smart Lock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Lock.debug.xcconfig"; path = "Target Support Files/Pods-Smart Lock/Pods-Smart Lock.debug.xcconfig"; sourceTree = "<group>"; };
 		B70C38B2241844340059E0B3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B70C38B42419193A0059E0B3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -50,9 +36,9 @@
 		B763B21A2408EEAC0004AE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B763B21C2408EEAC0004AE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7675F7924196F0B00CA9B0A /* VerifyOtpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOtpVC.swift; sourceTree = "<group>"; };
+		B77621EB242B9105005A642E /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		B79779EA240BC8BB004564CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B7F502F42417AEBF008276CB /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
-		BDF0E4399C0937BC26F2390E /* libPods-Smart Lock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Smart Lock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B8A5F45345B5CC8CA5D2F6 /* Pods_Smart_Lock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Lock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA56BCD85A0BC22E2C866C3E /* Pods-Smart Lock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Lock.release.xcconfig"; path = "Target Support Files/Pods-Smart Lock/Pods-Smart Lock.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E7E7EC1EEFD2A4B81F3BB62 /* Pods_Smart_Lock.framework in Frameworks */,
+				002540D68D542DAD164769D4 /* libPods-Smart Lock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,8 +67,7 @@
 		562728AED7FE3D3C0B89DBDE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BDF0E4399C0937BC26F2390E /* libPods-Smart Lock.a */,
-				5966DCFBDAE294363B0939E9 /* Pods_Smart_Lock.framework */,
+				0E0932BD63B5272A8635B514 /* libPods-Smart Lock.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,10 +106,11 @@
 				B763B2102408EE9A0004AE71 /* SceneDelegate.swift */,
 				B7F502F42417AEBF008276CB /* extension.swift */,
 				B763B2142408EE9A0004AE71 /* Main.storyboard */,
+				B70C38B2241844340059E0B3 /* LoginVC.swift */,
 				B70C38B42419193A0059E0B3 /* HomeVC.swift */,
+				B77621EB242B9105005A642E /* SignUpVC.swift */,
 				B70C38B82419275D0059E0B3 /* PhoneVC.swift */,
 				B7675F7924196F0B00CA9B0A /* VerifyOtpVC.swift */,
-				B70C38B2241844340059E0B3 /* LoginVC.swift */,
 				B763B2172408EEAC0004AE71 /* Assets.xcassets */,
 				B763B2192408EEAC0004AE71 /* LaunchScreen.storyboard */,
 				B763B21C2408EEAC0004AE71 /* Info.plist */,
@@ -144,8 +130,6 @@
 				B763B2072408EE990004AE71 /* Sources */,
 				B763B2082408EE990004AE71 /* Frameworks */,
 				B763B2092408EE990004AE71 /* Resources */,
-				B7F502FB2417BB05008276CB /* Embed Frameworks */,
-				45256CC34F88BF41FBB11CEE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,23 +188,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		45256CC34F88BF41FBB11CEE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Smart Lock/Pods-Smart Lock-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Smart Lock/Pods-Smart Lock-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Smart Lock/Pods-Smart Lock-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EB00824E6BFCFEAC1D0BC2E3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77621EC242B9105005A642E /* SignUpVC.swift in Sources */,
 				B70C38B3241844340059E0B3 /* LoginVC.swift in Sources */,
 				B763B20F2408EE9A0004AE71 /* AppDelegate.swift in Sources */,
 				B763B2112408EE9A0004AE71 /* SceneDelegate.swift in Sources */,

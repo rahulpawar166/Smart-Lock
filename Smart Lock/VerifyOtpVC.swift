@@ -23,6 +23,11 @@ class VerifyOtpVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func viewDidAppear(_ animated: Bool) {
+        if userDefaults.bool(forKey: "userSignedIn") {
+            performSegue(withIdentifier: "goToHomeVC", sender: self)
+        }
+    }
     
     @IBAction func verifyPressed(_ sender: UIButton) {
         guard let otpCode = otpTF.text else {return}
@@ -35,6 +40,9 @@ class VerifyOtpVC: UIViewController {
                  if error == nil {
                      print(success)
                      print("User signed in")
+                    self.userDefaults.set(true, forKey:"userSignedIn")
+                    self.userDefaults.synchronize()
+                    self.performSegue(withIdentifier: "goToHomeVC", sender: self)
                  }else {
                      print("Something went wrong\(error?.localizedDescription)")
                  }

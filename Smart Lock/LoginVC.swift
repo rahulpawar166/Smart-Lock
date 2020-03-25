@@ -26,11 +26,13 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
+        navigationItem.setHidesBackButton(true, animated: true)
         
+//        emailIdTF.attributedPlaceholder = [NSAttributedString.Key.foregroundColor=UIColor.FlatBlack()]
         
                let animatedGradient = AnimatedGradientView(frame: view.bounds)
                animatedGradient.direction = .up
-               animatedGradient.animationValues = [(colors: ["#2BC0E4", "#EAECC6"], .up, .axial),
+               animatedGradient.animationValues = [(colors: ["#2BC0E4", "#F7D80F"], .up, .axial),
         //                                        (colors: ["#833ab4", "#fd1d1d", "#fcb045"], .right, .axial)]
         //     (colors: ["#003973", "#E5E5BE"], .down, .axial)]
               (colors: ["#f5e76e", "#f7d04d", "#fcb03d"], .left, .axial)]
@@ -51,11 +53,16 @@ class LoginVC: UIViewController {
     
     
     @IBAction func phoneLoginPressed(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "goToPhoneLoginVC", sender: self)
        
     }
     
-   
+
+    @IBAction func signUpPressed(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "goToSignUpVC", sender: self)
+    }
+    
+    
     
     func createUser(email: String, password: String){
         
