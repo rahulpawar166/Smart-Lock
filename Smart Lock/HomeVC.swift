@@ -19,6 +19,7 @@ class HomeVC: UIViewController {
         
         navigationItem.setHidesBackButton(true, animated: true)
         // Do any additional setup after loading the view.
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
    
     @IBAction func callTapped(_ sender: UILongPressGestureRecognizer) {
