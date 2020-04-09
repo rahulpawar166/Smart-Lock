@@ -16,25 +16,44 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationItem.setHidesBackButton(true, animated: true)
         // Do any additional setup after loading the view.
     }
+   
+    @IBAction func callTapped(_ sender: UILongPressGestureRecognizer) {
+        performSegue(withIdentifier: "goToHistoryVC", sender: self)
+    }
+   
     
-    @IBAction func signOutPressed(_ sender: UIButton) {
+    
+    @IBAction func signOutPressed(_ sender: UIBarButtonItem) {
         do{
-            try Auth.auth().signOut()
-            userDefaults.removeObject(forKey: "userSignedIn")
-            userDefaults.synchronize()
-//            self.navigationController?.popViewController(animated: true)
-//            self.dismiss(animated: true, completion: nil)
-            self.performSegue(withIdentifier: "goToLoginVC", sender: self)
+                      try Auth.auth().signOut()
+                      userDefaults.removeObject(forKey: "userSignedIn")
+                      userDefaults.synchronize()
             
-        }catch let error as NSError{
-            print(error.localizedDescription)
-        }
+                    print("User Signed Out")
+//         self.navigationController?.popViewController(animated: true)
+//            self.dismiss(animated: true) {
+//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                let loginVC = storyboard.instantiateViewController(identifier: "LoginVC") as! LoginVC
+//
+//                self.navigationController?.pushViewController(loginVC, animated: true)
+//
+//            }
+            let loginVC = self.storyboard?.instantiateViewController(identifier: "LoginVC") as! LoginVC
+            self.show(loginVC, sender: self)
+
+                  
+                      
+              }   catch let error as NSError{
+                      print(error.localizedDescription)
+                  }
     }
     
+  
+
     
 
 }

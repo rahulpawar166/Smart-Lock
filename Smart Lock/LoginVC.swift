@@ -26,6 +26,7 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
+        navigationController?.setNavigationBarHidden(true, animated: true)
         navigationItem.setHidesBackButton(true, animated: true)
         
 //        emailIdTF.attributedPlaceholder = [NSAttributedString.Key.foregroundColor=UIColor.FlatBlack()]
@@ -38,30 +39,35 @@ class LoginVC: UIViewController {
               (colors: ["#f5e76e", "#f7d04d", "#fcb03d"], .left, .axial)]
                 animateView.addSubview(animatedGradient)
         
+       //MARK :- Text Field effects
+        
+       
+        
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         if userDefaults.bool(forKey: "userSignedIn") {
-            performSegue(withIdentifier: "goToHomeVC", sender: self)
+             performSegue(withIdentifier: "goToHomeVC", sender: self)
         }
     }
     
-
-    @IBAction func loginPressed(_ sender: UIButton) {
+    @IBAction func loginTapped(_ sender: UITapGestureRecognizer) {
         signinUser(email: emailIdTF.text!, password: passwordTF.text!)
     }
     
+//    @IBAction func loginPressed(_ sender: UIButton) {
+//        signinUser(email: emailIdTF.text!, password: passwordTF.text!)
+//    }
     
-    @IBAction func phoneLoginPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToPhoneLoginVC", sender: self)
-       
-    }
+//    @IBAction func phoneLoginTapped(_ sender: UITapGestureRecognizer) {
+//
+//        performSegue(withIdentifier: "goToPhoneLoginVC", sender: self)
+//    }
     
 
-    @IBAction func signUpPressed(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "goToSignUpVC", sender: self)
-    }
-    
+
+ 
     
     
     func createUser(email: String, password: String){
@@ -81,10 +87,18 @@ class LoginVC: UIViewController {
     func signinUser(email: String, password: String){
         Auth.auth().signIn(withEmail: email , password: password) { ( user, error) in
             if error == nil{
+                
+//                let mainTabBarController = self.storyboard?.instantiateViewController(identifier: "MainTabBarController") as! MainTabBarController
+//                self.show(mainTabBarController, sender: self)
+                
+                self.performSegue(withIdentifier: "goToHomeVC", sender: self)
+                
                 print("User signed in")
                 self.userDefaults.set(true, forKey:"userSignedIn")
                 self.userDefaults.synchronize()
-                self.performSegue(withIdentifier: "goToHomeVC", sender: self)
+            
+                
+                
             }else if(error?._code == AuthErrorCode.userNotFound.rawValue){
                 self.createUser(email: email, password: password)
             }else {
