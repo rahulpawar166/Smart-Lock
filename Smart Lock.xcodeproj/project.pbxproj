@@ -3,14 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		002540D68D542DAD164769D4 /* libPods-Smart Lock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0932BD63B5272A8635B514 /* libPods-Smart Lock.a */; };
+		0AACEEAF58324622CBC2A8E1 /* Pods_Smart_Lock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CBEA52CC5D9A58624AD2DA /* Pods_Smart_Lock.framework */; };
 		B70C38B3241844340059E0B3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C38B2241844340059E0B3 /* LoginVC.swift */; };
 		B70C38B52419193A0059E0B3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C38B42419193A0059E0B3 /* HomeVC.swift */; };
 		B70C38B92419275E0059E0B3 /* PhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C38B82419275D0059E0B3 /* PhoneVC.swift */; };
+		B70D5CD424530E0A00B8E1EF /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70D5CD224530E0900B8E1EF /* CustomCell.swift */; };
+		B70D5CD524530E0A00B8E1EF /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B70D5CD324530E0900B8E1EF /* CustomCell.xib */; };
+		B70D5CD7245310AD00B8E1EF /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70D5CD6245310AD00B8E1EF /* HistoryVC.swift */; };
+		B70D5CDB245313BF00B8E1EF /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70D5CDA245313BF00B8E1EF /* CellModel.swift */; };
+		B7130F4924926D4C008BB89E /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7130F4824926D4C008BB89E /* SignUpVC.swift */; };
 		B763B20F2408EE9A0004AE71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B763B20E2408EE9A0004AE71 /* AppDelegate.swift */; };
 		B763B2112408EE9A0004AE71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B763B2102408EE9A0004AE71 /* SceneDelegate.swift */; };
 		B763B2162408EE9A0004AE71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B763B2142408EE9A0004AE71 /* Main.storyboard */; };
@@ -19,15 +24,24 @@
 		B7675F7A24196F0B00CA9B0A /* VerifyOtpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7675F7924196F0B00CA9B0A /* VerifyOtpVC.swift */; };
 		B7918AAF243E57EA00E94CCB /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7918AAE243E57EA00E94CCB /* MainVC.swift */; };
 		B79779EB240BC8BB004564CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B79779EA240BC8BB004564CE /* GoogleService-Info.plist */; };
+		B7E80206244346BB00F1802A /* lock door.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7E80205244346BB00F1802A /* lock door.mp3 */; };
+		B7E80208244346D500F1802A /* unlock door.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7E80207244346D500F1802A /* unlock door.mp3 */; };
+		B7E8020F2445E37000F1802A /* UIButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E8020E2445E37000F1802A /* UIButtonAnimation.swift */; };
+		B7E802132445E42800F1802A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E802122445E42800F1802A /* ProfileVC.swift */; };
 		B7F502F52417AEBF008276CB /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F502F42417AEBF008276CB /* extension.swift */; };
+		B7F66EBD24431EEE006F5F3C /* LiveFootageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F66EBB24431EEE006F5F3C /* LiveFootageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E0932BD63B5272A8635B514 /* libPods-Smart Lock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Smart Lock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A453CF1B8BB6D1B7036D84 /* Pods-Smart Lock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Lock.debug.xcconfig"; path = "Target Support Files/Pods-Smart Lock/Pods-Smart Lock.debug.xcconfig"; sourceTree = "<group>"; };
 		B70C38B2241844340059E0B3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B70C38B42419193A0059E0B3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B70C38B82419275D0059E0B3 /* PhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhoneVC.swift; path = "/Users/rahul/Desktop/Final Project/Smart Lock/Smart Lock/PhoneVC.swift"; sourceTree = "<absolute>"; };
+		B70D5CD224530E0900B8E1EF /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		B70D5CD324530E0900B8E1EF /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		B70D5CD6245310AD00B8E1EF /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		B70D5CDA245313BF00B8E1EF /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		B7130F4824926D4C008BB89E /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		B763B20B2408EE9A0004AE71 /* Smart Lock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Lock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B763B20E2408EE9A0004AE71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B763B2102408EE9A0004AE71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +52,13 @@
 		B7675F7924196F0B00CA9B0A /* VerifyOtpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOtpVC.swift; sourceTree = "<group>"; };
 		B7918AAE243E57EA00E94CCB /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B79779EA240BC8BB004564CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B7E80205244346BB00F1802A /* lock door.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "lock door.mp3"; sourceTree = "<group>"; };
+		B7E80207244346D500F1802A /* unlock door.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "unlock door.mp3"; sourceTree = "<group>"; };
+		B7E8020E2445E37000F1802A /* UIButtonAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonAnimation.swift; sourceTree = "<group>"; };
+		B7E802122445E42800F1802A /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		B7F502F42417AEBF008276CB /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		B7F66EBB24431EEE006F5F3C /* LiveFootageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFootageVC.swift; sourceTree = "<group>"; };
+		B9CBEA52CC5D9A58624AD2DA /* Pods_Smart_Lock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Lock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B8A5F45345B5CC8CA5D2F6 /* Pods_Smart_Lock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Lock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA56BCD85A0BC22E2C866C3E /* Pods-Smart Lock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Lock.release.xcconfig"; path = "Target Support Files/Pods-Smart Lock/Pods-Smart Lock.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				002540D68D542DAD164769D4 /* libPods-Smart Lock.a in Frameworks */,
+				0AACEEAF58324622CBC2A8E1 /* Pods_Smart_Lock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +87,7 @@
 		562728AED7FE3D3C0B89DBDE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0E0932BD63B5272A8635B514 /* libPods-Smart Lock.a */,
+				B9CBEA52CC5D9A58624AD2DA /* Pods_Smart_Lock.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -78,6 +98,23 @@
 				E9B8A5F45345B5CC8CA5D2F6 /* Pods_Smart_Lock.framework */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		B70D5CD82453138000B8E1EF /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B70D5CD224530E0900B8E1EF /* CustomCell.swift */,
+				B70D5CD324530E0900B8E1EF /* CustomCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		B70D5CD9245313A400B8E1EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B70D5CDA245313BF00B8E1EF /* CellModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B763B2022408EE990004AE71 = {
@@ -102,21 +139,63 @@
 		B763B20D2408EE9A0004AE71 /* Smart Lock */ = {
 			isa = PBXGroup;
 			children = (
+				B7E802112445E3ED00F1802A /* Design */,
+				B70D5CD82453138000B8E1EF /* Custom Cell */,
+				B70D5CD9245313A400B8E1EF /* Model */,
+				B7E802102445E3CE00F1802A /* Extensions */,
+				B7E802042443469800F1802A /* supporting files */,
+				B7E80209244346E800F1802A /* View Controllers */,
 				B763B20E2408EE9A0004AE71 /* AppDelegate.swift */,
 				B763B2102408EE9A0004AE71 /* SceneDelegate.swift */,
-				B7F502F42417AEBF008276CB /* extension.swift */,
-				B763B2142408EE9A0004AE71 /* Main.storyboard */,
-				B7918AAE243E57EA00E94CCB /* MainVC.swift */,
-				B70C38B2241844340059E0B3 /* LoginVC.swift */,
-				B70C38B42419193A0059E0B3 /* HomeVC.swift */,
-				B70C38B82419275D0059E0B3 /* PhoneVC.swift */,
-				B7675F7924196F0B00CA9B0A /* VerifyOtpVC.swift */,
-				B763B2172408EEAC0004AE71 /* Assets.xcassets */,
-				B763B2192408EEAC0004AE71 /* LaunchScreen.storyboard */,
 				B763B21C2408EEAC0004AE71 /* Info.plist */,
 				B79779EA240BC8BB004564CE /* GoogleService-Info.plist */,
 			);
 			path = "Smart Lock";
+			sourceTree = "<group>";
+		};
+		B7E802042443469800F1802A /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				B7E80205244346BB00F1802A /* lock door.mp3 */,
+				B7E80207244346D500F1802A /* unlock door.mp3 */,
+			);
+			name = "supporting files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B7E80209244346E800F1802A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7918AAE243E57EA00E94CCB /* MainVC.swift */,
+				B70C38B2241844340059E0B3 /* LoginVC.swift */,
+				B7130F4824926D4C008BB89E /* SignUpVC.swift */,
+				B70C38B42419193A0059E0B3 /* HomeVC.swift */,
+				B70C38B82419275D0059E0B3 /* PhoneVC.swift */,
+				B7F66EBB24431EEE006F5F3C /* LiveFootageVC.swift */,
+				B7675F7924196F0B00CA9B0A /* VerifyOtpVC.swift */,
+				B7E802122445E42800F1802A /* ProfileVC.swift */,
+				B70D5CD6245310AD00B8E1EF /* HistoryVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B7E802102445E3CE00F1802A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B7F502F42417AEBF008276CB /* extension.swift */,
+				B7E8020E2445E37000F1802A /* UIButtonAnimation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B7E802112445E3ED00F1802A /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				B763B2142408EE9A0004AE71 /* Main.storyboard */,
+				B763B2192408EEAC0004AE71 /* LaunchScreen.storyboard */,
+				B763B2172408EEAC0004AE71 /* Assets.xcassets */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +209,7 @@
 				B763B2072408EE990004AE71 /* Sources */,
 				B763B2082408EE990004AE71 /* Frameworks */,
 				B763B2092408EE990004AE71 /* Resources */,
+				A6A59836A582816D3CAF35BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,7 +260,10 @@
 			files = (
 				B763B21B2408EEAC0004AE71 /* LaunchScreen.storyboard in Resources */,
 				B79779EB240BC8BB004564CE /* GoogleService-Info.plist in Resources */,
+				B70D5CD524530E0A00B8E1EF /* CustomCell.xib in Resources */,
 				B763B2182408EEAC0004AE71 /* Assets.xcassets in Resources */,
+				B7E80208244346D500F1802A /* unlock door.mp3 in Resources */,
+				B7E80206244346BB00F1802A /* lock door.mp3 in Resources */,
 				B763B2162408EE9A0004AE71 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +271,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A6A59836A582816D3CAF35BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smart Lock/Pods-Smart Lock-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smart Lock/Pods-Smart Lock-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Smart Lock/Pods-Smart Lock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EB00824E6BFCFEAC1D0BC2E3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,8 +322,15 @@
 				B763B2112408EE9A0004AE71 /* SceneDelegate.swift in Sources */,
 				B70C38B52419193A0059E0B3 /* HomeVC.swift in Sources */,
 				B7F502F52417AEBF008276CB /* extension.swift in Sources */,
+				B7E8020F2445E37000F1802A /* UIButtonAnimation.swift in Sources */,
+				B7F66EBD24431EEE006F5F3C /* LiveFootageVC.swift in Sources */,
 				B7918AAF243E57EA00E94CCB /* MainVC.swift in Sources */,
+				B70D5CD7245310AD00B8E1EF /* HistoryVC.swift in Sources */,
 				B70C38B92419275E0059E0B3 /* PhoneVC.swift in Sources */,
+				B7E802132445E42800F1802A /* ProfileVC.swift in Sources */,
+				B70D5CDB245313BF00B8E1EF /* CellModel.swift in Sources */,
+				B70D5CD424530E0A00B8E1EF /* CustomCell.swift in Sources */,
+				B7130F4924926D4C008BB89E /* SignUpVC.swift in Sources */,
 				B7675F7A24196F0B00CA9B0A /* VerifyOtpVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
