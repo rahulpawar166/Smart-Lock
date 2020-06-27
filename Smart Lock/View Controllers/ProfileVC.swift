@@ -169,20 +169,20 @@ class ProfileVC: UIViewController,UITextFieldDelegate {
             
         
         }
-        
-        
-        
-        
-        
-        
-        
-        
+     
         //MARK: - Saving Profile Image
          let image = profileImage.image
          let savedImageData:  NSData = image?.pngData() as! NSData
         
          UserDefaults.standard.set(savedImageData, forKey: "savedImage")
      
+        
+        
+              UserDefaults.standard.set(name, forKey: "savedName")
+              UserDefaults.standard.set(email, forKey: "savedEmail")
+              UserDefaults.standard.set(contact, forKey: "savedContactNumber")
+              UserDefaults.standard.set(address, forKey: "savedAddress")
+              UserDefaults.standard.set(membersInfamily, forKey: "savedMembersInFamily")
         
         let alert = UIAlertController(title: "Profile Saved", message: "Your Profile is successfully updated & saved.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (alertAction) in

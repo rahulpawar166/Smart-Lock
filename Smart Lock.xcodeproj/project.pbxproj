@@ -10,7 +10,6 @@
 		0AACEEAF58324622CBC2A8E1 /* Pods_Smart_Lock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CBEA52CC5D9A58624AD2DA /* Pods_Smart_Lock.framework */; };
 		B70C38B3241844340059E0B3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C38B2241844340059E0B3 /* LoginVC.swift */; };
 		B70C38B52419193A0059E0B3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C38B42419193A0059E0B3 /* HomeVC.swift */; };
-		B70C38B92419275E0059E0B3 /* PhoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C38B82419275D0059E0B3 /* PhoneVC.swift */; };
 		B70D5CD424530E0A00B8E1EF /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70D5CD224530E0900B8E1EF /* CustomCell.swift */; };
 		B70D5CD524530E0A00B8E1EF /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B70D5CD324530E0900B8E1EF /* CustomCell.xib */; };
 		B70D5CD7245310AD00B8E1EF /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70D5CD6245310AD00B8E1EF /* HistoryVC.swift */; };
@@ -21,7 +20,6 @@
 		B763B2162408EE9A0004AE71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B763B2142408EE9A0004AE71 /* Main.storyboard */; };
 		B763B2182408EEAC0004AE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B763B2172408EEAC0004AE71 /* Assets.xcassets */; };
 		B763B21B2408EEAC0004AE71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B763B2192408EEAC0004AE71 /* LaunchScreen.storyboard */; };
-		B7675F7A24196F0B00CA9B0A /* VerifyOtpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7675F7924196F0B00CA9B0A /* VerifyOtpVC.swift */; };
 		B7918AAF243E57EA00E94CCB /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7918AAE243E57EA00E94CCB /* MainVC.swift */; };
 		B79779EB240BC8BB004564CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B79779EA240BC8BB004564CE /* GoogleService-Info.plist */; };
 		B7E80206244346BB00F1802A /* lock door.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7E80205244346BB00F1802A /* lock door.mp3 */; };
@@ -36,7 +34,6 @@
 		B5A453CF1B8BB6D1B7036D84 /* Pods-Smart Lock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Lock.debug.xcconfig"; path = "Target Support Files/Pods-Smart Lock/Pods-Smart Lock.debug.xcconfig"; sourceTree = "<group>"; };
 		B70C38B2241844340059E0B3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B70C38B42419193A0059E0B3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		B70C38B82419275D0059E0B3 /* PhoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhoneVC.swift; path = "/Users/rahul/Desktop/Final Project/Smart Lock/Smart Lock/PhoneVC.swift"; sourceTree = "<absolute>"; };
 		B70D5CD224530E0900B8E1EF /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		B70D5CD324530E0900B8E1EF /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		B70D5CD6245310AD00B8E1EF /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
@@ -49,7 +46,6 @@
 		B763B2172408EEAC0004AE71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B763B21A2408EEAC0004AE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B763B21C2408EEAC0004AE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7675F7924196F0B00CA9B0A /* VerifyOtpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOtpVC.swift; sourceTree = "<group>"; };
 		B7918AAE243E57EA00E94CCB /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B79779EA240BC8BB004564CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B7E80205244346BB00F1802A /* lock door.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "lock door.mp3"; sourceTree = "<group>"; };
@@ -170,9 +166,7 @@
 				B70C38B2241844340059E0B3 /* LoginVC.swift */,
 				B7130F4824926D4C008BB89E /* SignUpVC.swift */,
 				B70C38B42419193A0059E0B3 /* HomeVC.swift */,
-				B70C38B82419275D0059E0B3 /* PhoneVC.swift */,
 				B7F66EBB24431EEE006F5F3C /* LiveFootageVC.swift */,
-				B7675F7924196F0B00CA9B0A /* VerifyOtpVC.swift */,
 				B7E802122445E42800F1802A /* ProfileVC.swift */,
 				B70D5CD6245310AD00B8E1EF /* HistoryVC.swift */,
 			);
@@ -326,12 +320,10 @@
 				B7F66EBD24431EEE006F5F3C /* LiveFootageVC.swift in Sources */,
 				B7918AAF243E57EA00E94CCB /* MainVC.swift in Sources */,
 				B70D5CD7245310AD00B8E1EF /* HistoryVC.swift in Sources */,
-				B70C38B92419275E0059E0B3 /* PhoneVC.swift in Sources */,
 				B7E802132445E42800F1802A /* ProfileVC.swift in Sources */,
 				B70D5CDB245313BF00B8E1EF /* CellModel.swift in Sources */,
 				B70D5CD424530E0A00B8E1EF /* CustomCell.swift in Sources */,
 				B7130F4924926D4C008BB89E /* SignUpVC.swift in Sources */,
-				B7675F7A24196F0B00CA9B0A /* VerifyOtpVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

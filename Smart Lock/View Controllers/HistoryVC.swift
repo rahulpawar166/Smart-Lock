@@ -103,12 +103,13 @@ class HistoryVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
            let deletingId = UserDefaults.standard.object(forKey: "savedID")
                         let uid = Auth.auth().currentUser?.uid as! String
                         let ref = Database.database().reference()
-                        ref.child("Users").child(uid).child("Smart Lock").queryOrdered(byChild: "ID").queryEqual(toValue: deletingId).observeSingleEvent(of: .childAdded) { (snapshot) in
+                        ref.child("Users").child(uid).child("History").queryOrdered(byChild: "ID").queryEqual(toValue: deletingId).observeSingleEvent(of: .childAdded) { (snapshot) in
                             snapshot.ref.removeValue()
         
                             self.cellDataArray.remove(at: indexPath.row)
                             self.tableView.deleteRows(at: [indexPath], with: .automatic)
                             self.tableView.reloadData()
+                            ref.keepSynced(true)
                         }
         
         
@@ -123,25 +124,54 @@ class HistoryVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     
     func historyData(){
         let uid = Auth.auth().currentUser?.uid as! String
-        let lockDB = Database.database().reference().child("Users").child(uid).child("Smart Lock")
+        let lockDB = Database.database().reference().child("Users").child(uid).child("History")
+        
+        
+        
+        
         lockDB.observe(.childAdded) { (snapshot) in
-            let snapshotValue = snapshot.value as! Dictionary<String,Any>
-            
-            let state = snapshotValue["state"]!
-            let date = snapshotValue["Date"]!
-            let time = snapshotValue["Time"]!
-            let id = snapshotValue["ID"]!
-            print(state, date, time, id)
-            
-            let cellModel = CellModel()
-            cellModel.status = state as! String
-            cellModel.date = date as! String
-            cellModel.time = time as! String
-            cellModel.id = id as! String
-            self.cellDataArray.append(cellModel)
-            self.tableView.reloadData()
-                
-            }
+                    let snapshotValue = snapshot.value as! Dictionary<String,Any>
+        
+                    let state = snapshotValue["state"]!
+                    let date = snapshotValue["Date"]!
+                    let time = snapshotValue["Time"]!
+                    let id = snapshotValue["ID"]!
+                    print(state, date, time, id)
+        
+                    let cellModel = CellModel()
+                    cellModel.status = state as! String
+                    cellModel.date = date as! String
+                    cellModel.time = time as! String
+                    cellModel.id = id as! String
+                    self.cellDataArray.append(cellModel)
+                    self.tableView.reloadData()
+        }
+        
+       
+        
+        
+       
+
+        
+        
+//        lockDB.observe(.childChanged) { (snapshot) in
+//            let snapshotValue = snapshot.value as! Dictionary<String,Any>
+//
+//            let state = snapshotValue["state"]!
+//            let date = snapshotValue["Date"]!
+//            let time = snapshotValue["Time"]!
+//            let id = snapshotValue["ID"]!
+//            print(state, date, time, id)
+//
+//            let cellModel = CellModel()
+//            cellModel.status = state as! String
+//            cellModel.date = date as! String
+//            cellModel.time = time as! String
+//            cellModel.id = id as! String
+//            self.cellDataArray.append(cellModel)
+//            self.tableView.reloadData()
+//
+//            }
          
             
             

@@ -98,8 +98,9 @@ class HomeVC: UIViewController, AVAudioPlayerDelegate {
         let ref = Database.database().reference()
         
         let values = ["state": state, "Date": Date, "Time": Time, "ID": id]
-        ref.child("Users").child(uid).child("Smart Lock").childByAutoId().updateChildValues(values)
-        
+        ref.child("Users").child(uid).child("Smart Lock").updateChildValues(values)
+        ref.child("Users").child(uid).child("History").childByAutoId().updateChildValues(values)
+        ref.keepSynced(true)
     }
     
  
@@ -122,9 +123,5 @@ class HomeVC: UIViewController, AVAudioPlayerDelegate {
                       print(error.localizedDescription)
                   }
     }
-    
-  
-
-    
 
 }

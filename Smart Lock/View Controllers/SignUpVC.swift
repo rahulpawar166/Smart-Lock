@@ -120,12 +120,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             }
                    
         }
-        
-        UserDefaults.standard.set(name, forKey: "savedName")
-        UserDefaults.standard.set(emailId, forKey: "savedEmail")
-        UserDefaults.standard.set(contactNumber, forKey: "savedContactNumber")
-        UserDefaults.standard.set(address, forKey: "savedAddress")
-        UserDefaults.standard.set(membersInFamily, forKey: "savedMembersInFamily")
+      
         
     }
     
